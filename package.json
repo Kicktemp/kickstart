@@ -1,0 +1,73 @@
+{
+  "name": "Kickstart",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "boilerplate": "cross-env KICK_CONFIG=boilerplate node ./scripts/tasks/copy.js",
+    "copy": "cross-env KICK_CONFIG=copy node ./scripts/tasks/copy.js",
+    "copyrelease": "cross-env KICK_CONFIG=release node ./scripts/tasks/copy.js",
+    "copypackage": "cross-env KICK_CONFIG=package node ./scripts/tasks/copy.js",
+    "watch": "node ./scripts/tasks/watch.js",
+    "cleaner": "node ./scripts/tasks/clean.js",
+    "archives": "cross-env node ./scripts/tasks/archives.js",
+    "release": "npm run cleaner && npm run copyrelease && npm run copypackage && npm run archives && npm run updateXML",
+    "updateXML": "node ./scripts/tasks/xml.js",
+    "download:joomla": "sh ./scripts/joomla.sh",
+    "download:joomla4": "sh ./scripts/joomla4.sh",
+    "publishtag": "sh ./scripts/post.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kicktemp/kickstart.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Kicktemp GmbH",
+    "email": "hello@kicktemp.com",
+    "url": "https://kicktemp.com"
+  },
+  "contributors": [
+    {
+      "name": "Niels Nübel",
+      "email": "niels@kicktemp.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kicktemp/kickstart/issues"
+  },
+  "homepage": "https://github.com/Kicktemp/kickstart#readme",
+  "buildconfigs": {
+    "proxy": "http://kickstart.kick"
+  },
+  "placeholder": {
+    "[UPDATEURL]": "https://kicktemp.shop/download?e=[PACKAGE_NAME]&v=[VERSION]",
+    "[PACKAGE_NAME]": "kickstart",
+    "[PROJECT_NAME]": "kickstart",
+    "[PRODUCT_NAME]": "Kickstart",
+    "[AUTHOR]": "Kicktemp GmbH",
+    "[AUTHOR_EMAIL]": "hello@kicktemp.com",
+    "[COPYRIGHT]": "Copyright © 2023 Kicktemp GmbH. All rights reserved.",
+    "[LICENSE]": "GNU General Public License version 2 or later; see LICENSE.txt",
+    "[AUTHOR_URL]": "https://kicktemp.com",
+    "[DATE]": "25.02.2023",
+    "[PLUGINTYPE]": "system"
+  },
+  "casesensitive": {
+    "kickstart": "kickstart",
+    "KickStart": "KickStart",
+    "KICKSTART": "KICKSTART"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "archiver": "^5.3.1",
+    "chokidar": "^3.5.3",
+    "cross-env": "^7.0.3",
+    "fs-extra": "^11.1.0",
+    "glob": "^8.1.0",
+    "libxmljs": "^0.19.10"
+  }
+}

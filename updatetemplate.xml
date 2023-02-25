@@ -1,0 +1,25 @@
+<update>
+  <name>System - KickStart</name>
+  <description>KickStart Plugin</description>
+  <element>kickstart</element>
+  <type>plugin</type>
+  <folder>system</folder>
+  <client>site</client>
+  <section>updates</section>
+  <version>[VERSION]</version>
+  <changelogurl>https://kicktemp.shop/changelog/kickstart</changelogurl>
+  <infourl title="KicktempYootheme Plugin">https://kicktemp.shop/produkte/kickstart/</infourl>
+  <downloads>
+    <downloadurl type="full" format="zip"><![CDATA[https://kicktemp.shop/download/kickstart/[VERSION]]]></downloadurl>
+  </downloads>
+  <sha256>[SHA256]</sha256>
+  <sha384>[SHA384]</sha384>
+  <sha512>[SHA512]</sha512>
+  <tags>
+    <tag>stable</tag>
+  </tags>
+  <maintainer>Kicktemp GmbH</maintainer>
+  <maintainerurl>https://kicktemp.shop</maintainerurl>
+  <php_minimum>7.2.5</php_minimum>
+  <targetplatform name="joomla" version="4.[012]"/>
+</update>
