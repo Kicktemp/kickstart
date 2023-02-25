@@ -1,3 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<updates>
+<updates><update>
+  <name>System - KickStart</name>
+  <description>KickStart Plugin</description>
+  <element>kickstart</element>
+  <type>plugin</type>
+  <folder>system</folder>
+  <client>site</client>
+  <section>updates</section>
+  <version>0.0.2</version>
+  <changelogurl>https://raw.githubusercontent.com/kicktemp/kickstart/main/changelog.xml</changelogurl>
+  <infourl title="Kickstart Plugin">https://github.com/Kicktemp/kickstart</infourl>
+  <downloads>
+    <downloadurl type="full" format="zip"><![CDATA[https://raw.githubusercontent.com/kicktemp/kickstart/main/update.xml0.0.2]]></downloadurl>
+  </downloads>
+  <sha256>5d77120de051028a847aad195be3fc18a81a0bd230ef4c5b2842303026592036</sha256>
+  <sha384>1211ab344911d2a3d9964d41d63a9ce0f076ae96b606b7d8cdfff9f8aa4a8ee0492a8c9c294892b672548f86f2cbe552</sha384>
+  <sha512>b212ece23ecd26a60b4cb6d9d3456c7ae4fca1848a69df75759edf4f288d78e602c078ee2d43e165efc44fabb026e0c36105f4e8f480b93f2c2613cd7424d0d6</sha512>
+  <tags>
+    <tag>stable</tag>
+  </tags>
+  <maintainer>Kicktemp GmbH</maintainer>
+  <maintainerurl>https://kicktemp.com</maintainerurl>
+  <php_minimum>7.2.5</php_minimum>
+  <targetplatform name="joomla" version="4.[012]"/>
+</update>
 </updates>
