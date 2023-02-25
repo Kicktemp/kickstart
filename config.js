@@ -25,9 +25,9 @@ export const config = {
     ],
     package: [
       {
-        src: 'releasefiles/plugins/system/kicktempyootheme/',
-        glob: 'releasefiles/plugins/system/kicktempyootheme/**/**',
-        dest: 'sourcefiles/plg_system_kicktempyootheme/'
+        src: 'releasefiles/plugins/system/kickstart/',
+        glob: 'releasefiles/plugins/system/kickstart/**/**',
+        dest: 'sourcefiles/plg_system_kickstart/'
       }
     ],
     cleaner: [
@@ -46,7 +46,7 @@ export const config = {
   archiver: [
     {
       destination : 'archives/',
-      name: 'plg_system_kicktempyootheme',
+      name: 'plg_system_kickstart',
       suffixversion: true,
       types: [
         {
@@ -58,7 +58,7 @@ export const config = {
         }
       ],
       folders: [
-        'sourcefiles/plg_system_kicktempyootheme'
+        'sourcefiles/plg_system_kickstart'
       ],
       files: [
       ]

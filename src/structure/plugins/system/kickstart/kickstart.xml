@@ -8,7 +8,7 @@
 	<copyright>[COPYRIGHT]</copyright>
 	<license>[LICENSE]</license>
 	<version>[VERSION]</version>
-	<changelogurl>https://stage.s7.projekt.dev/changelog?repo=test</changelogurl>
+	<changelogurl>https://raw.githubusercontent.com/kicktemp/kickstart/main/changelog.xml</changelogurl>
 	<description>PLG_SYSTEM_KICKSTART_XML_DESCRIPTION</description>
 	<namespace path="src">Kicktemp\Plugin\System\Yootheme</namespace>
 	<scriptfile>script.php</scriptfile>
@@ -19,7 +19,7 @@
 	</config>
 	<updateservers>
 		<server type="extension" priority="1" name="[PROJECT_NAME]">
-			https://stage.s7.projekt.dev/update?repo=test
+			https://raw.githubusercontent.com/kicktemp/kickstart/main/update.xml
 		</server>
 	</updateservers>
 </extension>
